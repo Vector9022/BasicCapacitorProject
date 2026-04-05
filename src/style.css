@@ -1,0 +1,26 @@
+:root {
+  font-family: system-ui;
+}
+
+html, body {
+  /* Полный экран без скролла + установка фона*/
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(at left top, #305899, #8639C4);
+}
+
+.mainContainer {
+  /* Занимаем весь экран */
+  position: absolute;
+  top: calc(env(safe-area-inset-top) + 5px);
+  bottom: calc(env(safe-area-inset-bottom) + 5px);
+  left: 5px;
+  right: 5px;
+
+  /* Фон, Скругление и Тень */
+  background: linear-gradient(135deg, #151414, #2E2E2E);
+  border-radius: 15px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
